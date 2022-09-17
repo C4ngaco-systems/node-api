@@ -3,9 +3,9 @@
 API for the Mundo Taci project
 
 ## 🛠 Tecnologias      
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" align="center" width="30" height="30" /> ReactJS
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" align="center" width="30" height="30" /> Javascript
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" align="center" width="30" height="30" /> expressJS
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" align="center" width="30" height="30" /> ExpressJS
 
 ## Instruções
 
