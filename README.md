@@ -1,25 +1,37 @@
-# node-api
+# API NODE MUNDO TACI
 
-API for the Mundo Taci project
+> Api implentada para servir de base para o desenvolvimento do projeto mundo taci,
+com intuito de acelerar o desenvolvimento do client que será o frontend desenvolvido em ReactJs.
+
+> Aos poucos também a api será implentada em java para a entrega final do projeto.
+
+### Ajustes e melhorias
+
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+
+- [x] setup básico do projeto
+- [x] autenticação
 
 ## 🛠 Tecnologias      
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" align="center" width="30" height="30" /> Javascript
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" align="center" width="25" height="25" /> JavaScript
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" align="center" width="30" height="30" /> ExpressJS
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" align="center" width="25" height="25" /> Node.js          
 
-## Instruções
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" align="center" width="25" height="25" /> Express.js
 
-### 1° Configurar Database mysql
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" align="center" width="25" height="25" /> MySQL
+    
+## 💻 Pré-requisitos
 
-- Inicializar um banco de dados mysql
-- Setar o password `black-magic` para o usuário root da db
-- O password também pode ser setado em uma variável de ambiente `MYSQL_ROOT_PASSWORD=black-magic`
-- Se estiver utilizando docker podera rodar o comando abaixo para criar a db
-- `docker run --name mysql -e MYSQL_ROOT_PASSWORD=black-magic -d mysql:latest`
-- Criar um banco com o nome `mundo_taci` podes criar da forma que preferir, poderás usar o comando abaixo na CLI do mysql
-- `CREATE DATABASE mundo_taci`
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-### 2° Configurar a api
+* Você tem instalado o`nodejs`.
+* Você tem uma instância ativa do `mysql` com password o "black-magic" para o usuário root
+* Você tem um banco com o nome `mundo_taci`
+
+## 🚀 Instalando
+
+Para instalar a api do mundo taci, siga estas etapas:
 
 ```sh
 # clonar o repositório
@@ -34,8 +46,20 @@ npm i
 # inicializar a api
 npm start
 ```
-**Checar console contra possíveis erros!**
 
+Deverás receber um output similar no console:
 
+```sh
+> api@1.0.0 start
+> nodemon index.js
 
-
+[nodemon] 2.0.19
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node index.js`
+Server is running on port 4000
+Executing (default): SELECT 1+1 AS result
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Users' AND TABLE_SCHEMA = 'mundo_taci'
+Connection has been established successfully.
+```
